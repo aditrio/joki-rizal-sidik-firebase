@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link href="assets/img/logo/logo.png" rel="icon"> -->
+    <title>Absensi Online </title>
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/ruang-admin.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <ul class="navbar-nav  sidebar sidebar-danger text-danger accordion" id="accordionSidebar">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon">
+                    <i class="fa fa-address-book text-danger"></i>
+                </div>
+                <div class="sidebar-brand-text text-danger mx-3">Absensi Online</div>
+            </a>
+            <hr class="sidebar-divider my-0">
+            <li class="nav-item">
+                <a class="nav-link text-danger" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+            <hr class="sidebar-divider">
+            <div class="sidebar-heading">
+                Features
+            </div>
+            <li class="nav-item ">
+                <a class="nav-link text-danger" href="jadwal.html">
+                    <i class="far fa-fw fa-calendar"></i>
+                    <span>Jadwal</span>
+                </a>
+            </li>
+            
+            <hr class="sidebar-divider">
+            <div class="version" id="version-ruangadmin"></div>
+        </ul>
+        <!-- Sidebar -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+                <!-- TopBar -->
+                <nav class="navbar navbar-expand navbar-danger bg-danger topbar mb-4 static-top">
+                    <button id="sidebarToggleTop" class="btn btn-link rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <ul class="navbar-nav ml-auto">
+                        <div class="topbar-divider d-none d-sm-block"></div>
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="img-profile rounded-circle" src="assets/img/boy.png" style="max-width: 60px">
+                                <span class="ml-2 d-none d-lg-inline text-white small">Guru</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="siswa.html">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Siswa
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Topbar -->
+                <!-- Container Fluid-->
+                <div class="container-fluid" id="container-wrapper">
+                    <!-- Earnings (Monthly) Card Example -->
+                    <div class="row">
+                        <div class="col-lg">
+                            <div class="card ">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-uppercase mb-1">Jadwal</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><h4 id="total-jadwal"></h4></div>
+                                            <!-- <div class="mt-2 mb-0 text-muted text-xs">
+                                                <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                                                <span>Since last month</span>
+                                            </div> -->
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-calendar fa-2x text-danger"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <br>
+
+                        <div class="list-jadwal">
+
+                        </div>
+
+                
+                    <!-- Modal Logout -->
+                    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelLogout" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabelLogout">Ohh No!</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Are you sure you want to logout?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancel</button>
+                                    <a href="login.html" class="btn btn-danger">Logout</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---Container Fluid-->
+            </div>
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        
+                    </div>
+                </div>
+            </footer>
+            <!-- Footer -->
+        </div>
+    </div>
+    <!-- Scroll to top -->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="assets/js/ruang-admin.min.js"></script>
+
+    <!-- js firebase -->
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDGT0tLr69ghqDWUd0Yi2Y59mDYIxNU420",
+    authDomain: "project01-sbd.firebaseapp.com",
+    databaseURL: "https://project01-sbd-default-rtdb.firebaseio.com",
+    projectId: "project01-sbd",
+    storageBucket: "project01-sbd.appspot.com",
+    messagingSenderId: "289992128541",
+    appId: "1:289992128541:web:080d8d5a9144b0f25daef4",
+    measurementId: "G-7X8EHB96NC"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
